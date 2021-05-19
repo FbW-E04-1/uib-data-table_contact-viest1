@@ -3,28 +3,26 @@
 }
 table{
     border:1px solid grey;
-    width:700px;
+    border-spacing:10px;
+    border-collapse:collapse;
+    width:100%;
 }
-td{
-    width:15%;
+td:first-child{
+    width:50%;
     text-align:left;
+}
+td:nth-child(2){
+    width:30%;
 }
 td:nth-child(3){
     text-align:right;
 }
-tr:nth-child(2n+1){
-background:grey;
+tr:nth-child(2n+2){
+    background:grey;
 }
-th{
-    background:white;
-    border-left:1px solid black;
+td:nth-child(2n), th:nth-child(2){
+    border-left:1px solid grey;
+    border-right:1px solid grey;
 }
-th:first-child{
-    border-left:none;
-}
-td{
-    border-left:1px solid black;
-}
-td:first-child{
-    border-left:none;
-}
+
+
