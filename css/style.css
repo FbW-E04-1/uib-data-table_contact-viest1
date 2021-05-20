@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+table{
+    border:1px solid grey;
+    border-spacing:10px;
+    border-collapse:collapse;
+    width:100%;
+}
+td:first-child{
+    width:50%;
+    text-align:left;
+}
+td:nth-child(2){
+    width:30%;
+}
+td:nth-child(3){
+    text-align:right;
+}
+tr:nth-child(2n+2){
+    background:grey;
+}
+td:nth-child(2n), th:nth-child(2){
+    border-left:1px solid grey;
+    border-right:1px solid grey;
+}
+
+
